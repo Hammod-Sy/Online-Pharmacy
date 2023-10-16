@@ -1,0 +1,394 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+   background-color: #9acad961;
+    
+}
+h2{
+  font-family: Copperplate, Papyrus, fantasy;
+  font-weight: bolder;text-decoration: underline;
+}
+h3{
+  font-family: "Times New Roman", Times, serif;
+font-weight: bold;
+}
+
+header {
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+  
+  .container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 97px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    font-size: 2em;
+    margin: 0;
+    font-family: Copperplate, Papyrus, fantasy;
+  
+  }
+  
+  .logo-image {
+    height: 215px;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-family: emoji;
+  
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+  }
+  
+  .search-box input[type="text"] {
+    padding: 1px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 25px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    width: 450px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bolder;
+    color: rgb(30, 33, 33);
+  }
+  
+  .search-box .search-btn {
+    width: 50px;
+    height: 100%;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: rgb(118, 86, 64);
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .search-box .search-btn i {
+    font-size: 20px;
+    padding-top: 5px;
+    padding-right: 2px;
+  }
+  
+
+main {
+	margin: 150px auto;
+	max-width: 1350px;
+}
+
+#slider {
+	position: relative;
+	height: 500px;
+}
+
+.slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 1s ease;
+
+}
+
+.slide.active {
+	opacity: 1;
+}
+
+.slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.slide-caption {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: #260707;
+}
+
+.slide-caption h2 {
+	font-size: 3em;
+	margin-bottom: 20px;
+}
+
+.slide-caption p {
+	font-size: 1.2em;
+	margin-bottom: 20px;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #1E90FF;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.2em;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.btn:hover {
+	background-color: #fff;
+	color: #1E90FF;
+}
+
+#slider-nav {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#slider-nav button {
+	background-color: #fff;
+	color: #1E90FF;
+	border: none;
+	border-radius: 50%;
+	font-size: 2em;
+	padding: 10px;
+	margin: 0 10px;
+	cursor: pointer;
+	outline: none;
+	transition: all 0.3s ease;
+}
+
+#slider-nav button:hover {
+	background-color: #1E90FF;
+	color: #fff;
+}
+
+#featured-products {
+	padding: 50px 0;
+
+}
+
+#featured-products h2 {
+	font-size: 2.5em;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#featured-products ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+}
+
+#featured-products li {
+	width: calc(25% - 20px);
+	margin-bottom: 40px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  transition: 1s;
+}
+
+#featured-products li img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+  transition: 1s;
+
+}
+#featured-products li img:hover{
+  transform:scale(0.8);
+
+}
+#featured-products li:hover{
+  transform: scale(1.1);
+
+}
+
+
+#featured-products a{
+  text-decoration: none;
+}
+#featured-products li h3 {
+	font-size: 1.2em;
+	margin: 10px;
+  
+  color: #353131;
+
+}
+
+#featured-products li p {
+	font-size: 1.2em;
+	margin: 10px;
+}
+
+
+.testimonials {
+    padding: 50px 0;}
+
+    .testimonials h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .testimonial-box {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .testimonial-box p {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .testimonial-box h4 {
+        font-size: 18px;
+        color: #4CAF50;
+        margin-bottom: 20px;
+    }
+    .container1 {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+        padding: 65px;
+       /* position: absolute;*/
+        bottom: -950px;
+        width: 100%;
+        height: 210px;
+      }
+      
+      footer h4 {
+        
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      
+      footer ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      footer li {
+        margin-bottom: 10px;
+      }
+      
+      footer a {
+        color: #ecf2ec;
+        text-decoration: none;
+      }
+      
+      footer address {
+        margin-bottom: 20px;
+      }
+      
+      footer abbr {
+        text-decoration: none;
+      }
+        
+        .container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: -1 20px;
+        }
+        
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        
+        .col-md-4 {
+          flex: 1;
+          margin-right: 30px;
+          margin-bottom: 30px;
+        }
+        
+        .col-md-4:last-child {
+          margin-right: 0;
+        }
+        
+        h4 {
+          margin-bottom: 15px;
+        }
+        
+        .social-icons {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+        
+        .social-icons li {
+          display: inline-block;
+          margin-right: 10px;
+        }
+        
+        .social-icons li:last-child {
+          margin-right: 0;
+        }
+        
+        .social-icons a {
+          color: #fff;
+          font-size: 40px;
+        }
+        
+        .social-icons a:hover {
+          color: #bbb;
+        }
+        
+        @media (max-width: 768px) {
+          .col-md-4 {
+            margin-right: 0;
+          }
+        }

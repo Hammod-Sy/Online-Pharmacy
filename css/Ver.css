@@ -1,0 +1,277 @@
+*
+{ 
+    /*font-size: 15px;*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+margin: 0 0px;
+}
+body{
+
+
+    background-image: url(../images/backGound.jpg);
+    background-size: 2000px;
+    background-repeat: no-repeat;
+}
+header {
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+  
+  .container1 {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 97px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    font-size: 2em;
+    margin: 0;
+    font-family: Copperplate, Papyrus, fantasy;
+  
+  }
+  
+  .logo-image {
+    height: 215px;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-family: emoji;
+
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .search-box input[type="text"] {
+    padding: 1px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 25px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    width: 450px;
+  }
+  
+  .search-box .search-btn {
+    width: 50px;
+    height: 100%;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: rgb(118, 86, 64);
+    color: #fff;
+    cursor: pointer;
+    margin-top: -20px;
+  }
+  
+  .search-box .search-btn i {
+    font-size: 20px;
+    padding-top: 5px;
+    padding-right: 2px;
+  }
+
+.container {
+	max-width: 475px;
+	margin: 190px auto;
+	padding: 20px;
+	background-color: #f2f2f2;
+    border: 1px solid #ccc;
+	border-radius: 10px;
+    right: -20%;
+}
+
+
+h1 {
+	text-align: center;
+}
+
+form {
+	margin-top: 20px;
+    right: -20%;
+   
+}
+.bt
+{
+    background-color:#116389;
+    margin: 15px 250px;
+    color: #fff;
+	border: none;
+	padding: 8px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+    top: 20%;
+}
+.bt:hover
+{
+    background-color: #017Fba;
+}
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+input[type="text"] {
+	width: 80%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+.cost {
+	border-top: 1px solid #ccc;
+	padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+	display: inline-block;
+	margin-left: 10px;
+}
+.pl {
+	background-color: #116389;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+    margin: 0 200px;
+}
+
+.pl :hover
+{
+    background-color:  #017Fba;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: -354px;
+    width: 97.3%;
+    height: 166px;
+
+  }
+  
+  footer h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer li {
+    margin-bottom: 10px;
+  }
+  
+  footer a {
+    color: #ecf2ec;
+    text-decoration: none;
+  }
+  
+  footer address {
+    margin-bottom: 20px;
+  }
+  
+  footer abbr {
+    text-decoration: none;
+  }
+    
+    .container2 {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .col-md-4 {
+      flex: 1;
+      margin-right: 30px;
+      margin-bottom: 30px;
+    }
+    
+    .col-md-4:last-child {
+      margin-right: 0;
+    }
+    
+    h4 {
+      margin-bottom: 15px;
+    }
+    
+    .social-icons {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .social-icons li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    
+    .social-icons li:last-child {
+      margin-right: 0;
+    }
+    
+    .social-icons a {
+      color: #fff;
+      font-size: 40px;
+    }
+    
+    .social-icons a:hover {
+      color: #bbb;
+    }
+    
+    @media (max-width: 768px) {
+      .col-md-4 {
+        margin-right: 0;
+      }
+    }
+    label{
+        font-family: Copperplate, Papyrus, fantasy;
+        font-size: large;
+        color: rgb(61, 43, 43);
+        font-weight: bolder;
+      }
+
+      h2{
+        text-align: center;
+      }
